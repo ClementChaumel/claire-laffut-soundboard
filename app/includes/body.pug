@@ -1,0 +1,18 @@
+mixin sound(id, desc)
+    div.flex.flex-column.justify-center.items-center.w5.pa3.br3.sound
+        div#circle.w4.h4.br-100.pointer.truncate
+            img(src='./images/teteDeClaire.png' id=id).button
+        p.pa3.f5.f4-ns.b.bg-white.ma0.tc.br3=desc
+
+div.flex.flex-wrap.justify-center
+    +sound("qqjdf", "Qu'est-ce que je dois faire ?")
+    +sound("bonjour", "Bonjour")
+    +sound("fauteAvouee", "Faute avouée est a moitié pardonnée")
+    +sound("pasLeTemps", "Et j'ai pas le temps")
+    +sound("vuALaTV", "J'lai vu à la télé")
+    +sound("lalala", "LALALALALA")
+    +sound("enfer", "Si j'mens j'vais en enfer")
+    +sound("tantPis", "Tant pis tant pis tant pis")
+    +sound("fullIntro", "Intro entière")
+    +sound("ttQuitter", "J'ai tout quitté")
+    +sound("raffut", "CLAIRE RAFFUT")
