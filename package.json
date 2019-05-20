@@ -1,7 +1,7 @@
 {
   "scripts": {
     "analyze": "webpack-bundle-analyzer ./stats.json",
-    "build": "webpack --env production --progress",
+    "build": "webpack --env production --progress && cp favicon.ico ./build/favicon.ico",
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --open --hot --env development\""
   },
   "repository": {
