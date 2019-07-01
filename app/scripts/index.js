@@ -5,7 +5,7 @@ import fauteAvoueeSource from '../sounds/FauteAvoueeEstAMoitiePardonnee.mp3'
 import fullIntroSource from '../sounds/fullIntro.mp3'
 import pasLeTempsSource from '../sounds/JaiPasLeTemps.mp3'
 import vuALaTVSource from '../sounds/JlaiVuALaTele.mp3'
-import lalalaSource from '../sounds/Lalalalala.mp3'
+import talatatalataSource from '../sounds/Talatatalata.mp3'
 import enferSource from '../sounds/SiJMensJVaisEnEnfer.mp3'
 import tantPisSource from '../sounds/TantPis.mp3'
 import ttQuitterSource from '../sounds/toutQuitte.mp3'
@@ -86,16 +86,16 @@ vuALaTVElement.addEventListener('click', function () {
   vuALaTVSound.play()
 })
 
-var lalalaSound = new Audio(lalalaSource)
+var talatatalataSound = new Audio(talatatalataSource)
 
-var lalalaElement = document.getElementById('lalala')
-lalalaElement.addEventListener('click', function () {
+var talatatalataElement = document.getElementById('talatatalata')
+talatatalataElement.addEventListener('click', function () {
   const element = this
   element.className += ' rotate'
-  lalalaSound.addEventListener('ended', function () {
+  talatatalataSound.addEventListener('ended', function () {
     element.className = 'button'
   })
-  lalalaSound.play()
+  talatatalataSound.play()
 })
 
 var enferSound = new Audio(enferSource)
@@ -138,7 +138,7 @@ var raffutElement = document.getElementById('raffut')
 raffutElement.addEventListener('click', function () {
   tantPisSound.play()
   enferSound.play()
-  lalalaSound.play()
+  talatatalataSound.play()
   vuALaTVSound.play()
   pasLeTempsSound.play()
   fullIntroSound.play()
